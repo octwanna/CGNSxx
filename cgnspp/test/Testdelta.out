@@ -1,0 +1,199 @@
+ADF MotherNode{Root Node of ADF File}:MT
++-Base{CGNSBase_t}:I4[2]={3,3}
+| +-CaseTitle{Descriptor_t}:C1[66]="CFL3D V5.0 code:   75 Degree Swept Delta Wing - 37x65x65 - Laminar"
+| +-DataClass{DataClass_t}:C1[30]="NormalizedByUnknownDimensional"
+| +-GlobalConvergenceHistory{ConvergenceHistory_t}:I4[1]=300
+| | +-BadPointsTurbEqn1{DataArray_t}:I4[300]={0,0,0,0,0,0,...}
+| | +-BadPointsTurbEqn2{DataArray_t}:I4[300]={0,0,0,0,0,0,...}
+| | +-CoefDrag{DataArray_t}:R8[300]={0.0993261,1.71527,0.092745,-0.428301,0.250699,0.51491,...}
+| | +-CoefForceX{DataArray_t}:R8[300]={0.106042,0.0894451,0.0713792,0.0588597,0.0491333,0.0401267,...}
+| | +-CoefForceY{DataArray_t}:R8[300]={4.30252e-19,0.00117241,0.00686722,0.00594024,0.0039306,0.00632841,...}
+| | +-CoefForceZ{DataArray_t}:R8[300]={-5.52973e-18,4.65863,0.0739164,-1.38042,0.584447,1.36298,...}
+| | +-CoefLift{DataArray_t}:R8[300]={-0.0371365,4.33229,0.0442379,-1.31361,0.530228,1.26261,...}
+| | +-CoefMomentX{DataArray_t}:R8[300]={-1.05592e-18,0.7816,0.0143167,-0.229544,0.111001,0.245712,...}
+| | +-CoefMomentY{DataArray_t}:R8[300]={-2.60708e-19,-1.95009,-0.0506253,0.695568,-0.112761,-0.554104,...}
+| | +-CoefMomentZ{DataArray_t}:R8[300]={-0.0160987,-0.0131247,-0.00703279,-0.00547586,-0.0056711,-0.00288781,...}
+| | +-CoefPressureDrag{DataArray_t}:R8[300]={0,1.63149,0.0258861,-0.483434,0.204678,0.477324,...}
+| | +-CoefViscousDrag{DataArray_t}:R8[300]={0.0993261,0.0837807,0.0668589,0.0551323,0.0460218,0.0375855,...}
+| | +-ControlSurfaceForce{DataArray_t}:R8[300]={0,0,0,0,0,0,...}
+| | +-ControlSurfaceMassFlow{DataArray_t}:R8[300]={0,0,0,0,0,0,...}
+| | +-ControlSurfaceMomentumForce{DataArray_t}:R8[300]={0,0,0,0,0,0,...}
+| | +-ControlSurfacePressureForce{DataArray_t}:R8[300]={0,0,0,0,0,0,...}
+| | +-ControlSurfaceViscousForce{DataArray_t}:R8[300]={0,0,0,0,0,0,...}
+| | +-RSDMassRMS{DataArray_t}:R8[300]={3.16889e-06,1.0591e-06,1.63137e-06,9.26666e-07,9.55896e-07,6.73445e-07,...}
+| | +-RSDTurbEqn1RMS{DataArray_t}:R8[300]={1,1,1,1,1,1,...}
+| | +-RSDTurbEqn2RMS{DataArray_t}:R8[300]={1,1,1,1,1,1,...}
+| +-InputFileUsed{Descriptor_t}:C1[9963]=(non-printable)
+| +-ReferenceState{ReferenceState_t}:MT
+| | +-AngleofAttack{DataArray_t}:R8[1]=20.5
+| | | +-DataClass{DataClass_t}:C1[11]="Dimensional"
+| | | +-DimensionalUnits{DimensionalUnits_t}:C1[32,5]
+| | +-Density{DataArray_t}:R8[1]=1
+| | | +-DataClass{DataClass_t}:C1[30]="NormalizedByUnknownDimensional"
+| | +-Length{DataArray_t}:R8[1]=1
+| | | +-DataClass{DataClass_t}:C1[30]="NormalizedByUnknownDimensional"
+| | +-Mach{DataArray_t}:R8[1]=0.3
+| | | +-DataClass{DataClass_t}:C1[23]="NondimensionalParameter"
+| | +-Prandtl{DataArray_t}:R8[1]=0.72
+| | | +-DataClass{DataClass_t}:C1[21]="DimensionlessConstant"
+| | +-ReferenceStateDescription{Descriptor_t}:C1[19]="ReferenceQuantities"
+| | +-Reynolds{DataArray_t}:R8[1]=500000
+| | | +-DataClass{DataClass_t}:C1[23]="NondimensionalParameter"
+| | +-SpecificHeatRatio{DataArray_t}:R8[1]=1.4
+| | | +-DataClass{DataClass_t}:C1[21]="DimensionlessConstant"
+| | +-Temperature{DataArray_t}:R8[1]=460
+| | | +-DataClass{DataClass_t}:C1[11]="Dimensional"
+| | | +-DimensionalUnits{DimensionalUnits_t}:C1[32,5]
+| | +-TimeLatest{DataArray_t}:R8[1]=0
+| | | +-DataClass{DataClass_t}:C1[30]="NormalizedByUnknownDimensional"
+| | +-VelocitySound{DataArray_t}:R8[1]=1
+| | | +-DataClass{DataClass_t}:C1[30]="NormalizedByUnknownDimensional"
+| | +-ViscosityKinematic{DataArray_t}:R8[1]=1
+| |   +-DataClass{DataClass_t}:C1[30]="NormalizedByUnknownDimensional"
+| +-SimulationType{Descriptor_t}:C1[17]="Non-time-accurate"
+| +-Zone   1{Zone_t}:I4[3,3]
+|   +-FlowEquationSet{FlowEquationSet_t}:MT
+|   | +-EquationDimension{"int"}:I4[1]=3
+|   | +-GasModel{GasModel_t}:C1[5]="Ideal"
+|   | +-GoverningEquations{GoverningEquations_t}:C1[9]="NSLaminar"
+|   | | +-DiffusionModel{"int[1+...+IndexDimension]"}:I4[6]={0,0,1,0,0,0}
+|   | +-ThermalConductivityModel{ThermalConductivityModel_t}:C1[15]="ConstantPrandtl"
+|   | +-ViscosityModel{ViscosityModel_t}:C1[13]="SutherlandLaw"
+|   +-FlowSolution{FlowSolution_t}:MT
+|   | +-Density{DataArray_t}:R8[38,66,66]
+|   | +-GridLocation{GridLocation_t}:C1[10]="CellCenter"
+|   | +-Information{Descriptor_t}:C1[53]="Fine grid solution (on same level as GridCoordinates)"
+|   | +-Pressure{DataArray_t}:R8[38,66,66]
+|   | +-Rind{Rind_t}:I4[6]={1,1,1,1,1,1}
+|   | +-VelocityX{DataArray_t}:R8[38,66,66]
+|   | +-VelocityY{DataArray_t}:R8[38,66,66]
+|   | +-VelocityZ{DataArray_t}:R8[38,66,66]
+|   +-GridCoordinates{GridCoordinates_t}:MT
+|   | +-CoordinateX{DataArray_t}:R8[37,65,65]
+|   | +-CoordinateY{DataArray_t}:R8[37,65,65]
+|   | +-CoordinateZ{DataArray_t}:R8[37,65,65]
+|   +-ORPHAN{FamilyName_t}:MT
+|   +-ZoneBC{ZoneBC_t}:MT
+|   | +-Ihi_Seg   1{BC_t}:C1[10]="BCFarfield"
+|   | | +-CFL3DType{Descriptor_t}:C1[6]="  1003"
+|   | | +-ORPHAN{FamilyName_t}:MT
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | +-Ilo_Seg   1{BC_t}:C1[10]="BCFarfield"
+|   | | +-CFL3DType{Descriptor_t}:C1[6]="  1003"
+|   | | +-ORPHAN{FamilyName_t}:MT
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | +-Jhi_Seg   1{BC_t}:C1[15]="BCSymmetryPlane"
+|   | | +-CFL3DType{Descriptor_t}:C1[6]="  1001"
+|   | | +-ORPHAN{FamilyName_t}:MT
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | +-Jlo_Seg   1{BC_t}:C1[15]="BCSymmetryPlane"
+|   | | +-CFL3DType{Descriptor_t}:C1[6]="  1001"
+|   | | +-ORPHAN{FamilyName_t}:MT
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | +-Khi_Seg   1{BC_t}:C1[10]="BCFarfield"
+|   | | +-CFL3DType{Descriptor_t}:C1[6]="  1003"
+|   | | +-ORPHAN{FamilyName_t}:MT
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | +-Klo_Seg   1{BC_t}:C1[15]="BCSymmetryPolar"
+|   | | +-CFL3DType{Descriptor_t}:C1[6]="  1011"
+|   | | +-ORPHAN{FamilyName_t}:MT
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | +-Klo_Seg   2{BC_t}:C1[11]="UserDefined"
+|   |   +-CFL3DAuxData{Descriptor_t}:C1[30]="                 -1.        0."
+|   |   +-CFL3DType{Descriptor_t}:C1[6]="  2004"
+|   |   +-ORPHAN{FamilyName_t}:MT
+|   |   +-PointRange{IndexRange_t}:I4[3,2]
+|   +-ZoneGridConnectivity{ZoneGridConnectivity_t}:MT
+|   | +-1to1InterfaceA   1{GridConnectivity1to1_t}:C1[8]="Zone   1"
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+|   | | +-Transform{"int[IndexDimension]"}:I4[3]={1,-2,3}
+|   | +-1to1InterfaceB   1{GridConnectivity1to1_t}:C1[8]="Zone   1"
+|   |   +-PointRange{IndexRange_t}:I4[3,2]
+|   |   +-PointRangeDonor{IndexRange_t}:I4[3,2]
+|   |   +-Transform{"int[IndexDimension]"}:I4[3]={1,-2,3}
+|   +-ZoneType{ZoneType_t}:C1[10]="Structured"
++-CGNSLibraryVersion{CGNSLibraryVersion_t}:R4[1]=1.1
+Base{CGNSBase_t}:3/3
++-CaseTitle: CFL3D V5.0 code:   75 Degree Swept Delta Wing - 37x65x65 - L
++-InputFileUsed: I/O FILES                                                   
++-SimulationType: Non-time-accurate
++-DataClass: NormalizedByUnknownDimensional
++-ReferenceState{ReferenceState_t}
+| +-ReferenceStateDescription: ReferenceQuantities
+| +-AngleofAttack{DataArray_t}: 20.5
+| +-Density{DataArray_t}: 1
+| +-Length{DataArray_t}: 1
+| +-Mach{DataArray_t}: 0.3
+| +-Prandtl{DataArray_t}: 0.72
+| +-Reynolds{DataArray_t}: 500000
+| +-SpecificHeatRatio{DataArray_t}: 1.4
+| +-Temperature{DataArray_t}: 460
+| +-TimeLatest{DataArray_t}: 0
+| +-VelocitySound{DataArray_t}: 1
+| +-ViscosityKinematic{DataArray_t}: 1
++-GlobalConvergenceHistory{ConvergenceHistory_t}:300
++-Zone   1{Zone_t}:3/structured
+  +-FlowEquationSet{FlowEquationSet_t}
+  | +-GoverningEquations: NSLaminar
+  | +-DiffusionModel{int[]}
+  | +-GasModel: Ideal
+  | +-GasModel{GasModel_t}
+  | +-ViscosityModel: SutherlandLaw
+  | +-ViscosityModel{ViscosityModel_t}
+  | +-ThermalConductivityModel: ConstantPrandtl
+  | +-ThermalConductivityModel{ThermalConductivityModel_t}
+  +-FamilyName: ORPHAN
+  +-ZoneBC{ZoneBC_t}
+  | +-Ihi_Seg   1{BC_t}(@Vertex): BCFarfield
+  | | +-CFL3DType:   1003
+  | | +-PointRange{IndexRange_t}
+  | | +-FamilyName: ORPHAN
+  | +-Ilo_Seg   1{BC_t}(@Vertex): BCFarfield
+  | | +-CFL3DType:   1003
+  | | +-PointRange{IndexRange_t}
+  | | +-FamilyName: ORPHAN
+  | +-Jhi_Seg   1{BC_t}(@Vertex): BCSymmetryPlane
+  | | +-CFL3DType:   1001
+  | | +-PointRange{IndexRange_t}
+  | | +-FamilyName: ORPHAN
+  | +-Jlo_Seg   1{BC_t}(@Vertex): BCSymmetryPlane
+  | | +-CFL3DType:   1001
+  | | +-PointRange{IndexRange_t}
+  | | +-FamilyName: ORPHAN
+  | +-Khi_Seg   1{BC_t}(@Vertex): BCFarfield
+  | | +-CFL3DType:   1003
+  | | +-PointRange{IndexRange_t}
+  | | +-FamilyName: ORPHAN
+  | +-Klo_Seg   1{BC_t}(@Vertex): BCSymmetryPolar
+  | | +-CFL3DType:   1011
+  | | +-PointRange{IndexRange_t}
+  | | +-FamilyName: ORPHAN
+  | +-Klo_Seg   2{BC_t}(@Vertex): UserDefined
+  | | +-CFL3DAuxData:                  -1.        0.
+  | | +-CFL3DType:   2004
+  | | +-PointRange{IndexRange_t}
+  | | +-FamilyName: ORPHAN
+  +-ZoneGridConnectivity{ZoneGridConnectivity_t}
+  | +-1to1InterfaceA   1{GridConnectivity1to1_t}
+  | | | ZoneDonorName: Zone   1
+  | | +-PointRange{IndexRange_t}
+  | | +-PointRangeDonor{IndexRange_t}
+  | | +-Transform{int[]}
+  | +-1to1InterfaceB   1{GridConnectivity1to1_t}
+  | | | ZoneDonorName: Zone   1
+  | | +-PointRange{IndexRange_t}
+  | | +-PointRangeDonor{IndexRange_t}
+  | | +-Transform{int[]}
+  +-GridCoordinates{GridCoordinates_t}
+  | +-CoordinateX{DataArray_t}
+  | +-CoordinateY{DataArray_t}
+  | +-CoordinateZ{DataArray_t}
+  +-FlowSolution{FlowSolution_t}(@CellCenter)
+    +-Information: Fine grid solution (on same level as GridCoordinates)
+    +-Density{DataArray_t}
+    +-Pressure{DataArray_t}
+    +-VelocityX{DataArray_t}
+    +-VelocityY{DataArray_t}
+    +-VelocityZ{DataArray_t}
+    +-Rind{Rind_t}

@@ -1,0 +1,23 @@
+ADF MotherNode{Root Node of ADF File}:MT
++-CGNSLibraryVersion{CGNSLibraryVersion_t}:R4[1]=2.1
++-ExampleBase#1{CGNSBase_t}:I4[2]={3,3}
+  +-ExampleZone#1{Zone_t}:I4[3,3]
+  | +-GridCoordinates{GridCoordinates_t}:MT
+  | | +-CoordinateX{DataArray_t}:R8[21,17,9]
+  | | +-CoordinateY{DataArray_t}:R8[21,17,9]
+  | | +-CoordinateZ{DataArray_t}:R8[21,17,9]
+  | +-SolutionCellCenter{FlowSolution_t}:MT
+  | | +-Density{DataArray_t}:R8[21,17,9]
+  | | +-GridLocation{GridLocation_t}:C1[10]="CellCenter"
+  | | +-Pressure{DataArray_t}:R8[21,17,9]
+  | +-SolutionRind{FlowSolution_t}:MT
+  | | +-GridLocation{GridLocation_t}:C1[10]="CellCenter"
+  | | +-Rind{Rind_t}:I4[6]={1,1,1,1,1,1}
+  | | +-Temperature{DataArray_t}:R8[19,15,7]
+  | +-SolutionVertex{FlowSolution_t}:MT
+  | | +-GridLocation{GridLocation_t}:C1[6]="Vertex"
+  | | +-VelocityX{DataArray_t}:R8[21,17,9]
+  | | +-VelocityY{DataArray_t}:R8[21,17,9]
+  | | +-VelocityZ{DataArray_t}:R8[21,17,9]
+  | +-ZoneType{ZoneType_t}:C1[10]="Structured"
+  +-README{Descriptor_t}:C1[33]="Simple 3D structured grid example"

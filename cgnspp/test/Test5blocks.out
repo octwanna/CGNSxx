@@ -1,0 +1,277 @@
+ADF MotherNode{Root Node of ADF File}:MT
++-BASE#1{CGNSBase_t}:I4[2]={3,3}
+| +-domain.1{Zone_t}:I4[3,3]
+| | +-GridCoordinates{GridCoordinates_t}:MT
+| | | +-CoordinateX{DataArray_t}:R8[4,4,10]
+| | | +-CoordinateY{DataArray_t}:R8[4,4,10]
+| | | +-CoordinateZ{DataArray_t}:R8[4,4,10]
+| | +-ORPHAN{FamilyName_t}:MT
+| | +-ZoneGridConnectivity{ZoneGridConnectivity_t}:MT
+| | | +-Conn. 1to1 for SF2 (1,3){GridConnectivity1to1_t}:C1[8]="domain.3"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+| | | +-Conn. 1to1 for SF4 (1,4){GridConnectivity1to1_t}:C1[8]="domain.4"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={-2,1,3}
+| | | +-Conn. 1to1 for SF5 (1,4){GridConnectivity1to1_t}:C1[8]="domain.4"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+| | | +-Conn. 1to1 for SF6 (1,5){GridConnectivity1to1_t}:C1[8]="domain.5"
+| | |   +-PointRange{IndexRange_t}:I4[3,2]
+| | |   +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | |   +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+| | +-ZoneType{ZoneType_t}:C1[10]="Structured"
+| +-domain.2{Zone_t}:I4[3,3]
+| | +-GridCoordinates{GridCoordinates_t}:MT
+| | | +-CoordinateX{DataArray_t}:R8[4,4,10]
+| | | +-CoordinateY{DataArray_t}:R8[4,4,10]
+| | | +-CoordinateZ{DataArray_t}:R8[4,4,10]
+| | +-ORPHAN{FamilyName_t}:MT
+| | +-ZoneGridConnectivity{ZoneGridConnectivity_t}:MT
+| | | +-Conn. 1to1 for SF11 (2,4){GridConnectivity1to1_t}:C1[8]="domain.4"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,-2,-3}
+| | | +-Conn. 1to1 for SF12 (2,5){GridConnectivity1to1_t}:C1[8]="domain.5"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={-1,2,-3}
+| | | +-Conn. 1to1 for SF8 (2,3){GridConnectivity1to1_t}:C1[8]="domain.3"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+| | | +-Conn. 1to1 for SF9 (2,4){GridConnectivity1to1_t}:C1[8]="domain.4"
+| | |   +-PointRange{IndexRange_t}:I4[3,2]
+| | |   +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | |   +-Transform{"int[IndexDimension]"}:I4[3]={2,1,-3}
+| | +-ZoneType{ZoneType_t}:C1[10]="Structured"
+| +-domain.3{Zone_t}:I4[3,3]
+| | +-GridCoordinates{GridCoordinates_t}:MT
+| | | +-CoordinateX{DataArray_t}:R8[4,4,10]
+| | | +-CoordinateY{DataArray_t}:R8[4,4,10]
+| | | +-CoordinateZ{DataArray_t}:R8[4,4,10]
+| | +-ORPHAN{FamilyName_t}:MT
+| | +-ZoneGridConnectivity{ZoneGridConnectivity_t}:MT
+| | | +-Conn. 1to1 for SF13 (3,4){GridConnectivity1to1_t}:C1[8]="domain.4"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={-3,1,-2}
+| | | +-Conn. 1to1 for SF15 (3,4){GridConnectivity1to1_t}:C1[8]="domain.4"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,3,-2}
+| | | +-Conn. 1to1 for SF2 (3,1){GridConnectivity1to1_t}:C1[8]="domain.1"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+| | | +-Conn. 1to1 for SF8 (3,2){GridConnectivity1to1_t}:C1[8]="domain.2"
+| | |   +-PointRange{IndexRange_t}:I4[3,2]
+| | |   +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | |   +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+| | +-ZoneType{ZoneType_t}:C1[10]="Structured"
+| +-domain.4{Zone_t}:I4[3,3]
+| | +-GridCoordinates{GridCoordinates_t}:MT
+| | | +-CoordinateX{DataArray_t}:R8[7,10,10]
+| | | +-CoordinateY{DataArray_t}:R8[7,10,10]
+| | | +-CoordinateZ{DataArray_t}:R8[7,10,10]
+| | +-ORPHAN{FamilyName_t}:MT
+| | +-ZoneGridConnectivity{ZoneGridConnectivity_t}:MT
+| | | +-Conn. 1to1 for SF11 (4,2){GridConnectivity1to1_t}:C1[8]="domain.2"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,-2,-3}
+| | | +-Conn. 1to1 for SF13 (4,3){GridConnectivity1to1_t}:C1[8]="domain.3"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={2,-3,-1}
+| | | +-Conn. 1to1 for SF15 (4,3){GridConnectivity1to1_t}:C1[8]="domain.3"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,-3,2}
+| | | +-Conn. 1to1 for SF18 (4,5){GridConnectivity1to1_t}:C1[8]="domain.5"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={2,-1,3}
+| | | +-Conn. 1to1 for SF4 (4,1){GridConnectivity1to1_t}:C1[8]="domain.1"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={2,-1,3}
+| | | +-Conn. 1to1 for SF5 (4,1){GridConnectivity1to1_t}:C1[8]="domain.1"
+| | | | +-PointRange{IndexRange_t}:I4[3,2]
+| | | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | | | +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+| | | +-Conn. 1to1 for SF9 (4,2){GridConnectivity1to1_t}:C1[8]="domain.2"
+| | |   +-PointRange{IndexRange_t}:I4[3,2]
+| | |   +-PointRangeDonor{IndexRange_t}:I4[3,2]
+| | |   +-Transform{"int[IndexDimension]"}:I4[3]={2,1,-3}
+| | +-ZoneType{ZoneType_t}:C1[10]="Structured"
+| +-domain.5{Zone_t}:I4[3,3]
+|   +-GridCoordinates{GridCoordinates_t}:MT
+|   | +-CoordinateX{DataArray_t}:R8[16,9,10]
+|   | +-CoordinateY{DataArray_t}:R8[16,9,10]
+|   | +-CoordinateZ{DataArray_t}:R8[16,9,10]
+|   +-ORPHAN{FamilyName_t}:MT
+|   +-ZoneGridConnectivity{ZoneGridConnectivity_t}:MT
+|   | +-Conn. 1to1 for SF12 (5,2){GridConnectivity1to1_t}:C1[8]="domain.2"
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+|   | | +-Transform{"int[IndexDimension]"}:I4[3]={-1,2,-3}
+|   | +-Conn. 1to1 for SF18 (5,4){GridConnectivity1to1_t}:C1[8]="domain.4"
+|   | | +-PointRange{IndexRange_t}:I4[3,2]
+|   | | +-PointRangeDonor{IndexRange_t}:I4[3,2]
+|   | | +-Transform{"int[IndexDimension]"}:I4[3]={-2,1,3}
+|   | +-Conn. 1to1 for SF6 (5,1){GridConnectivity1to1_t}:C1[8]="domain.1"
+|   |   +-PointRange{IndexRange_t}:I4[3,2]
+|   |   +-PointRangeDonor{IndexRange_t}:I4[3,2]
+|   |   +-Transform{"int[IndexDimension]"}:I4[3]={1,2,3}
+|   +-ZoneType{ZoneType_t}:C1[10]="Structured"
++-CGNSLibraryVersion{CGNSLibraryVersion_t}:R4[1]=1.1
+BASE#1{CGNSBase_t}:3/3
++-domain.1{Zone_t}:3/structured
+| +-FamilyName: ORPHAN
+| +-ZoneGridConnectivity{ZoneGridConnectivity_t}
+| | +-Conn. 1to1 for SF2 (1,3){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.3
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF4 (1,4){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.4
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF5 (1,4){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.4
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF6 (1,5){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.5
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| +-GridCoordinates{GridCoordinates_t}
+|   +-CoordinateX{DataArray_t}
+|   +-CoordinateY{DataArray_t}
+|   +-CoordinateZ{DataArray_t}
++-domain.2{Zone_t}:3/structured
+| +-FamilyName: ORPHAN
+| +-ZoneGridConnectivity{ZoneGridConnectivity_t}
+| | +-Conn. 1to1 for SF11 (2,4){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.4
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF12 (2,5){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.5
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF8 (2,3){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.3
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF9 (2,4){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.4
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| +-GridCoordinates{GridCoordinates_t}
+|   +-CoordinateX{DataArray_t}
+|   +-CoordinateY{DataArray_t}
+|   +-CoordinateZ{DataArray_t}
++-domain.3{Zone_t}:3/structured
+| +-FamilyName: ORPHAN
+| +-ZoneGridConnectivity{ZoneGridConnectivity_t}
+| | +-Conn. 1to1 for SF13 (3,4){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.4
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF15 (3,4){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.4
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF2 (3,1){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.1
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF8 (3,2){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.2
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| +-GridCoordinates{GridCoordinates_t}
+|   +-CoordinateX{DataArray_t}
+|   +-CoordinateY{DataArray_t}
+|   +-CoordinateZ{DataArray_t}
++-domain.4{Zone_t}:3/structured
+| +-FamilyName: ORPHAN
+| +-ZoneGridConnectivity{ZoneGridConnectivity_t}
+| | +-Conn. 1to1 for SF11 (4,2){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.2
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF13 (4,3){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.3
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF15 (4,3){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.3
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF18 (4,5){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.5
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF4 (4,1){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.1
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF5 (4,1){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.1
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| | +-Conn. 1to1 for SF9 (4,2){GridConnectivity1to1_t}
+| | | | ZoneDonorName: domain.2
+| | | +-PointRange{IndexRange_t}
+| | | +-PointRangeDonor{IndexRange_t}
+| | | +-Transform{int[]}
+| +-GridCoordinates{GridCoordinates_t}
+|   +-CoordinateX{DataArray_t}
+|   +-CoordinateY{DataArray_t}
+|   +-CoordinateZ{DataArray_t}
++-domain.5{Zone_t}:3/structured
+  +-FamilyName: ORPHAN
+  +-ZoneGridConnectivity{ZoneGridConnectivity_t}
+  | +-Conn. 1to1 for SF12 (5,2){GridConnectivity1to1_t}
+  | | | ZoneDonorName: domain.2
+  | | +-PointRange{IndexRange_t}
+  | | +-PointRangeDonor{IndexRange_t}
+  | | +-Transform{int[]}
+  | +-Conn. 1to1 for SF18 (5,4){GridConnectivity1to1_t}
+  | | | ZoneDonorName: domain.4
+  | | +-PointRange{IndexRange_t}
+  | | +-PointRangeDonor{IndexRange_t}
+  | | +-Transform{int[]}
+  | +-Conn. 1to1 for SF6 (5,1){GridConnectivity1to1_t}
+  | | | ZoneDonorName: domain.1
+  | | +-PointRange{IndexRange_t}
+  | | +-PointRangeDonor{IndexRange_t}
+  | | +-Transform{int[]}
+  +-GridCoordinates{GridCoordinates_t}
+    +-CoordinateX{DataArray_t}
+    +-CoordinateY{DataArray_t}
+    +-CoordinateZ{DataArray_t}

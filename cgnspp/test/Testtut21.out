@@ -1,0 +1,64 @@
+ADF MotherNode{Root Node of ADF File}:MT
++-Base1{CGNSBase_t}:I4[2]={3,3}
+| +-DataClass{DataClass_t}:C1[11]="Dimensional"
+| +-DimensionalUnits{DimensionalUnits_t}:C1[32,5]
+| +-Zone1{Zone_t}:I4[1,3]
+|   +-GridCoordinates{GridCoordinates_t}:MT
+|   | +-CoordinateX{DataArray_t}:R4[2106]={0,0,0,0,0,0,...}
+|   | | +-DataConversion{DataConversion_t}:R4[2]={1,8.87223e+18}
+|   | +-CoordinateY{DataArray_t}:R4[2106]={0,0.003175,0.00635,0.009525,0.0127,0.015875,...}
+|   | | +-DataConversion{DataConversion_t}:R4[2]={1,8.87223e+18}
+|   | +-CoordinateZ{DataArray_t}:R4[2106]={0,0,0,0,0,0,...}
+|   | | +-DataConversion{DataConversion_t}:R4[2]={1,8.87223e+18}
+|   | +-DataClass{DataClass_t}:C1[23]="NormalizedByDimensional"
+|   +-Section1{Elements_t}:I4[2]={20,0}
+|   | +-ElementConnectivity{DataArray_t}:I4[14256]={17,1,10,11,2,82,...}
+|   | +-ElementRange{IndexRange_t}:I4[2]={1,1584}
+|   +-Solution1{FlowSolution_t}:MT
+|   | +-Density{DataArray_t}:R4[1584]={1.205,1.205,1.205,1.205,1.205,1.205,...}
+|   | +-GridLocation{GridLocation_t}:C1[10]="CellCenter"
+|   | +-Pressure{DataArray_t}:R4[1584]={0,-0.00494218,-0.00877586,-0.0116375,-0.0135547,-0.014238,...}
+|   | | +-DataClass{DataClass_t}:C1[23]="NormalizedByDimensional"
+|   | | +-DataConversion{DataConversion_t}:R4[2]={1,8.87223e+18}
+|   | +-SpecificHeatPressure{DataArray_t}:R4[1584]={1006,1006,1006,1006,1006,1006,...}
+|   | +-Temperature{DataArray_t}:R4[1584]={273,273,273,273,273,273,...}
+|   | +-ThermalConductivity{DataArray_t}:R4[1584]={0.02637,0.02637,0.02637,0.02637,0.02637,0.02637,...}
+|   | +-TurbulentDissipation{DataArray_t}:R4[1584]={0.953564,0.49905,0.485728,0.4852,0.485671,0.487026,...}
+|   | +-TurbulentEnergyKinetic{DataArray_t}:R4[1584]={0.0246073,0.0159806,0.0156949,0.0156835,0.0156937,0.0157229,...}
+|   | +-TurbulentViscosity{DataArray_t}:R4[1584]={6.88664e-05,5.54973e-05,5.4999e-05,5.49791e-05,5.49969e-05,5.5048e-05,...}
+|   | | +-DimensionalExponents{DimensionalExponents_t}:R4[5]={1,-1,-1,0,0}
+|   | +-VelocityX{DataArray_t}:R4[1584]={0.981928,0.994902,0.994321,0.994145,0.994636,0.995744,...}
+|   | +-VelocityY{DataArray_t}:R4[1584]={0.00792356,0.00709514,0.00542382,0.00387311,0.00209614,-0.000374288,...}
+|   | +-VelocityZ{DataArray_t}:R4[1584]={0.00546712,0.00574566,0.00580776,0.0058749,0.00595275,0.00603087,...}
+|   | +-ViscosityMolecular{DataArray_t}:R4[1584]={1.81e-05,1.81e-05,1.81e-05,1.81e-05,1.81e-05,1.81e-05,...}
+|   +-ZoneType{ZoneType_t}:C1[12]="Unstructured"
++-CGNSLibraryVersion{CGNSLibraryVersion_t}:R4[1]=1.2
+Base1{CGNSBase_t}:3/3
++-DataClass: Dimensional
++-DimensionalUnits: Kilogram, Meter, Second, Kelvin, Radian
++-Zone1{Zone_t}:1/unstructured
+  +-Section1{Elements_t}:MIXED/0
+  +-GridCoordinates{GridCoordinates_t}
+  | +-DataClass: NormalizedByDimensional
+  | +-CoordinateX{DataArray_t}
+  | | +-DataConversion{DataConversion_t}: 1 * x + 8.87223e+18
+  | +-CoordinateY{DataArray_t}
+  | | +-DataConversion{DataConversion_t}: 1 * x + 8.87223e+18
+  | +-CoordinateZ{DataArray_t}
+  | | +-DataConversion{DataConversion_t}: 1 * x + 8.87223e+18
+  +-Solution1{FlowSolution_t}(@CellCenter)
+    +-Density{DataArray_t}
+    +-Pressure{DataArray_t}
+    | +-DataClass: NormalizedByDimensional
+    | +-DataConversion{DataConversion_t}: 1 * x + 8.87223e+18
+    +-SpecificHeatPressure{DataArray_t}
+    +-Temperature{DataArray_t}
+    +-ThermalConductivity{DataArray_t}
+    +-TurbulentDissipation{DataArray_t}
+    +-TurbulentEnergyKinetic{DataArray_t}
+    +-TurbulentViscosity{DataArray_t}
+    | +-DimensionalExponents{DimensionalExponents_t}: m: 1, l:-1, t: -1, T: 0, °: 0
+    +-VelocityX{DataArray_t}
+    +-VelocityY{DataArray_t}
+    +-VelocityZ{DataArray_t}
+    +-ViscosityMolecular{DataArray_t}

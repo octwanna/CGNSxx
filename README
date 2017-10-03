@@ -1,0 +1,47 @@
+CGNS++
+------
+
+This is the fourth public release of the CGNS++ library.
+
+CGNS++ is an object oriented interface to provide access to CGNS (CFD General
+Notation System) databases. It is similar to the existing C and FORTRAN
+interfaces provided by www.cgns.org, but uses an object oriented abstraction
+of the underlying SIDS (Standard Interface Data Structures).
+
+The midlevel library functionality of CGNS 2.1 is nearly complete by now, the 
+only planned but still missing feature is partial write of DataArray_t nodes. 
+Note that partial reads and writes are supported by the ADF++ layer already.
+CGNS 2.2-4 extensions are added upon need or request.
+
+Portability: You need a pretty decent C++ compiler to be happy. Tested are the
+following systems:
+gcc 3.2/3.3.3/3.4.3/4.0.1 on Linux/Intel 2.4.x and 2.6.x (x86 and x86-64), 
+gcc 3.0.2 and MIPSpro 7.4 on IRIX 6.5 (R12000)
+icc 8.1 (Intel compiler for Linux/Intel) on Linux/Intel 2.4.x and 2.6.x
+Visual Studio.NET on Windows XP (shudder)
+
+Sun CC used to be working, but we have currently no machine to check.
+However, we leave the detection and usage mechanism in, if somebody should
+need it. The compiler needs optimization enabled (-xO2 in CFLAGS and CXXFLAGS) 
+to not complain about missing functions (which are not inlined).
+
+The Sun and MIPS compilers use the C++ compiler for creating C++ libraries.
+Since we do not know how to convince automake to use their different option and
+syntax we provide two shell scripts to call CC in ar mode accordingly.
+
+make check compiles the library and runs the included tests. It needs the 
+*.cgns files available from cgnspp.sourceforge.net (bundled) or www.cgns.org.
+If you try to compile in parallel on an SMP machine, you may have to restart
+make check in sequential mode for the example directory.
+
+We decided to upgrade to beta level status, so if you use it for any production
+work, you are still on your own, but we are quite confident. We are using it 
+every day, but mostly the unstructured parts only. As always, we would like 
+to ask you to have a look at it, test it, and see if it fits your needs. We 
+look forward to hear from you some bug (there aren't any, are there?) reports 
+(and possibly fixes), feature requests and any comments in general.
+
+
+Thank you,
+
+	Manuel & colleagues

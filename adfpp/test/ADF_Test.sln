@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ADF_Test", "ADF_Test.vcproj", "{919B16F6-BDFC-45B3-8B94-645CE3D3FFAC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{919B16F6-BDFC-45B3-8B94-645CE3D3FFAC}.Debug.ActiveCfg = Debug|Win32
+		{919B16F6-BDFC-45B3-8B94-645CE3D3FFAC}.Debug.Build.0 = Debug|Win32
+		{919B16F6-BDFC-45B3-8B94-645CE3D3FFAC}.Release.ActiveCfg = Release|Win32
+		{919B16F6-BDFC-45B3-8B94-645CE3D3FFAC}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

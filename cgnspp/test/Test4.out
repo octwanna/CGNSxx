@@ -1,0 +1,5 @@
+ADF MotherNode{Root Node of ADF File}:MT
++-Base{CGNSBase_t}:I4[2]={1,1}
+| +-Family{Family_t}:MT
+|   +-FamilyBC{FamilyBC_t}:C1[11]="BCDirichlet"
++-CGNSLibraryVersion{CGNSLibraryVersion_t}:R4[1]=2.1

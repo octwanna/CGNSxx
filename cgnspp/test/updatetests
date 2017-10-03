@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "Updating tests..."
+
+for File in 1 2 3 4 5
+do
+	./cgnsppTest $File > Test$File.out
+done
+
+for File in 5blocks bump delta jet multi tut21
+do
+	./cgnsppTest $File.cgns > Test$File.out
+done
+
+echo -e "\nTests successfully updated.\n"

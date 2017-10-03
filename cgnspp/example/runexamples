@@ -1,0 +1,16 @@
+#!/bin/sh
+
+rm grid_c++.cgns > /dev/null 2>&1
+for Num in 1 2 3 4 5 6
+do
+	if ./ug$Num
+	then
+		Back=$?
+	else
+		Back=$?
+		echo "Error running example number $Num"
+		exit $Back
+	fi
+done
+
+exit 0

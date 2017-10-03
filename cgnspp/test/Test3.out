@@ -1,0 +1,13 @@
+ADF MotherNode{Root Node of ADF File}:MT
++-CGNSLibraryVersion{CGNSLibraryVersion_t}:R4[1]=2.1
++-ExampleBase#2{CGNSBase_t}:I4[2]={3,3}
+  +-ExampleZone#2{Zone_t}:I4[1,3]
+  | +-Elements{Elements_t}:I4[2]={17,0}
+  | | +-ElementConnectivity{DataArray_t}:MT
+  | | +-ElementRange{IndexRange_t}:I4[2]={1,2560}
+  | +-GridCoordinates{GridCoordinates_t}:MT
+  | | +-CoordinateX{DataArray_t}:R8[3213]={0,1,2,3,4,5,...}
+  | | +-CoordinateY{DataArray_t}:R8[3213]={0,1,2,3,4,5,...}
+  | | +-CoordinateZ{DataArray_t}:R8[3213]={0,1,2,3,4,5,...}
+  | +-ZoneType{ZoneType_t}:C1[12]="Unstructured"
+  +-README{Descriptor_t}:C1[37]="Single-Zone unstructured grid example"

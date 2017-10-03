@@ -1,0 +1,38 @@
+#!/bin/sh
+
+echo "Running tests..."
+
+Back=0
+Files=""
+
+for Example in 1 2 3 4 5
+do
+	if ./cgnsppTest $Example | diff Test$Example.out -
+	then
+		echo "Ok" > /dev/null
+	else
+		Back=$?
+		Files="$Files$Example "
+		echo "Found differences for example $Example"
+	fi
+done
+
+for File in 5blocks bump delta jet multi tut21
+do
+	if ./cgnsppTest $File.cgns | diff Test$File.out -
+	then
+		echo "Ok" > /dev/null
+	else
+		Back=$?
+		Files="$Files$File "
+		echo "Found differences for file $File.cgns"
+	fi
+done
+
+if test $Back = 0
+then
+	echo -e "\nTests successfully completed.\n"
+else
+	echo -e "\nErrors found in $Files\b, errorlevel=$Back\n"
+	exit $Back
+fi

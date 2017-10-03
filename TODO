@@ -1,0 +1,7 @@
+Use classes for every CGNS node in the SIDS (about 30)
+
+Complete all the tiny subnodes
+
+Enrich data access functionality	
+
+Check cases, where a node is used with a different name and/or label (example: BCType as FamilyBC)
